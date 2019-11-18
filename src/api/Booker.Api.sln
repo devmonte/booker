@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "BookerApi\Api.csproj", "{35ABD1A7-B14A-4F44-97D2-28CD22839063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "BookerApi\Api.csproj", "{35ABD1A7-B14A-4F44-97D2-28CD22839063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C7DB459F-19A4-43D4-B740-15D020C9EE1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C7DB459F-19A4-43D4-B740-15D020C9EE1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8A8E58F5-05FB-44A0-978A-E9B4799BD267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{8A8E58F5-05FB-44A0-978A-E9B4799BD267}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
