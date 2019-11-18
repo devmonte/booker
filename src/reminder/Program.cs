@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Booker.Reminder.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -18,7 +19,10 @@ namespace Booker.Reminder
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddHostedService<Worker>();
+                    services.AddScoped<INotifierClient, NotifierClient>();
+                    services.AddScoped<IVisitWatchdog, VisitWatchdog>();
+
+                    services.AddHostedService<TimedHostedService>();
                 });
     }
 }
