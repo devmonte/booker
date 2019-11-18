@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Booker.Reminder": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
