@@ -12,17 +12,19 @@ namespace Infrastructure.Repositories
     public class SalonRepository : ISalonsRepository
     {
         private readonly IMapper _mapper;
+        private readonly BookerDbContext _dbContext;
 
-        public SalonRepository(IMapper mapper)
+        public SalonRepository(IMapper mapper, BookerDbContext dbContext)
         {
             _mapper = mapper;
+            _dbContext = dbContext;
         }
 
         public IList<Salon> GetAll()
         {
-            var domainSalon = _mapper.Map<Salon>(new Core.Entities.Salon { Name = "test" });
+            var domainSalons = _mapper.Map<List<Salon>>(_dbContext.Salons.ToList());
 
-            return new List<Salon> { domainSalon };
+            return domainSalons;
         }
     }
 }

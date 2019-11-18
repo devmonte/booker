@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Core.Entities;
 using Core.Repositories;
+using Core.Services;
 using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -36,8 +37,10 @@ namespace BookerApi
                 {
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
                 });
-            services.AddScoped<ISalonsRepository, SalonRepository>();
             services.AddAutoMapper(options => options.AddProfile<MappingProfile>(), AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<IDbSeeder, DbSeeder>();
+            
+            services.AddScoped<ISalonsRepository, SalonRepository>();
 
         }
 
