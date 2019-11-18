@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.DomainObjects;
+using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure
