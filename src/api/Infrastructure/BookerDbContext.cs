@@ -16,5 +16,7 @@ namespace Infrastructure
         }
 
         public DbSet<Salon> Salons { get; set; }
+        public DbSet<Visit> Visits { get; set; }
+
     }
 }
