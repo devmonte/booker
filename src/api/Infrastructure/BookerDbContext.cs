@@ -17,6 +17,11 @@ namespace Infrastructure
 
         public DbSet<Salon> Salons { get; set; }
         public DbSet<Visit> Visits { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Service> Services { get; set; }
 
     }
 }
