@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Notifier";
+
+package Notify;
+
+// The greeting service definition.
+service Notifier {
+  // Sends a greeting
+  rpc Notify (NotifyRequest) returns (NotifyReply);
+}
+
+// The request message containing the user's name.
+message NotifyRequest {
+  string name = 1;
+  string mail = 2;
+  string phone = 3;
+}
+
+// The response message containing the greetings.
+message NotifyReply {
+  string status = 1;
+}
