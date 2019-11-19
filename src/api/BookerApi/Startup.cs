@@ -5,6 +5,7 @@ using Core.Repositories;
 using Core.Services;
 using Infrastructure;
 using Infrastructure.Repositories;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,7 @@ namespace Api
             services.AddScoped<IDbSeeder, DbSeeder>();
             
             services.AddScoped<ISalonsRepository, SalonRepository>();
+            services.AddScoped<INotifierClient, NotifierClient>();
 
         }
 

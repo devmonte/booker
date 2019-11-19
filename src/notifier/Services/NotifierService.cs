@@ -20,7 +20,10 @@ namespace Notifier.Services
         public override Task<NotifyReply> Notify(NotifyRequest request, ServerCallContext context)
         {
             _logger.LogInformation($"Sending notification to user: ");
-            return base.Notify(request, context);
+            return Task.FromResult(new NotifyReply
+            {
+                Status = "Ok"
+            });
         }
     }
 }

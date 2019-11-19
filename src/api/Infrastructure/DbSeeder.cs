@@ -22,25 +22,25 @@ namespace Infrastructure
 
         public void Seed()
         {
-            if (!_context.Salons.Any())
-            {
+            //if (!_context.Salons.Any())
+            //{
 
-                _context.Salons.Add(new Salon
-                {
-                    Name = "Example Beauty Studio",
-                    Address = "ul. Focha 13",
-                    City = "Bydgoszcz"
-                });
-            }
-            if (!_context.Visits.Any())
-            {
-                _context.Visits.Add(new Visit
-                {
-                    DateTime = new DateTime(2019, 11, 30, 10, 0, 0, DateTimeKind.Utc),
-                    Duration = 30,
-                });
-            }
-            _context.SaveChanges();
+            //    _context.Salons.Add(new Salon
+            //    {
+            //        Name = "Example Beauty Studio",
+            //        Address = "ul. Focha 13",
+            //        City = "Bydgoszcz"
+            //    });
+            //}
+            //if (!_context.Visits.Any())
+            //{
+            //    _context.Visits.Add(new Visit
+            //    {
+            //        DateTime = new DateTime(2019, 11, 30, 10, 0, 0, DateTimeKind.Utc),
+            //        Duration = 30,
+            //    });
+            //}
+            //_context.SaveChanges();
         }
     }
 }
