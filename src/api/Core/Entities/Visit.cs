@@ -19,7 +19,7 @@ namespace Core.Entities
         public Guid ClientId { get; set; }
         public Client Client { get; set; }
 
-        public Guid ServiceId { get; set; }
+        public Guid? ServiceId { get; set; }
         public Service Service { get; set; }
 
     }
